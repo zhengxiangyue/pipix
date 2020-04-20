@@ -18,7 +18,7 @@ except:
     print("Short code is not valid")
     exit
 
-json_object_request = requests.get(url = json_url, params = {'item_id': item_id}) 
+json_object_request = requests.get(url = json_url, params = {'item_id': item_id}, headers={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36'})
 video_url = json_object_request.json()['data']['item']['origin_video_download']['url_list'][0]['url']
 r = requests.get(video_url)  
 
