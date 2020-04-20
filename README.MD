@@ -4,6 +4,7 @@
 
 - Jun 3 2019 可用
 - Nov 17 2019 可用
+- April 20 2020 修复 no content without user-agent
 
 ## Usage
 
